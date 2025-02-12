@@ -1,7 +1,7 @@
 button,
 .button {
     background-color: $main_color;
-    border: 1px solid $main_color;
+    border-radius: $button_border_rad;
     color:white;
     padding: 10px 30px;
     cursor: pointer;
@@ -18,8 +18,8 @@ button,
 
 .button-white {
     background-color: white;
-    color: $main_color;
-    border: 1px solid $main_color;
+    color: $black_color;
+
     text-decoration: none;
 
     &:hover{
