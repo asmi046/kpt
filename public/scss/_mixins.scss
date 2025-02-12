@@ -1,3 +1,13 @@
 @mixin flex-display {
     display: flex;
 }
+@mixin arrow-separator{
+    content: '';
+    position: absolute;
+    background-image: url('../img/kpt-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20px;
+    width: 40px;
+    left: 50%;
+}

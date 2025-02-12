@@ -1,15 +1,17 @@
 .text_styles {
 
-    h3 {
-        padding-left: 20px;
+    h2 {
         font-size: 1.5rem;
         font-weight: 500;
         color: $main_color;
+        margin: 20px 0;
+        @media (max-width: 992px) {
+            text-align: center;
+        }
     }
 
     p{
         margin: 20px 0;
-        padding-left: 20px;
     }
 
     ul li {
