@@ -57,7 +57,7 @@
 
         <section class="section-services">
             <div class="container">
-                <div class="section-services__content">
+                <div class="section-services__content text_styles">
                     <div class="section-services__content-img">
                         <img src="{{ asset('img/img-busines-office.webp') }}" alt="{{ config('lend_data.company_name') }}">
                     </div>
@@ -119,9 +119,11 @@
                 </div>
             </div>
         </section>
-        <section class="section-services">
+
+        <div class="separator separator-rotate" aria-hidden="true"></div>
+        <section class="section-services bg-color--light border-radius-base">
             <div class="container">
-                <div class="section-services__content">
+                <div class="section-services__content text_styles">
                     <div class="section-services__content-item">
                         <h3 class="section-services__content-title">БУХГАЛТЕРСКОЕ СОПРОВОЖДЕНИЕ:</h3>
                         <ul class="section-services__list">
@@ -154,10 +156,11 @@
                 </div>
             </div>
         </section>
+        <div class="separator" aria-hidden="true"></div>
 
         <section class="section-services">
             <div class="container">
-                <div class="section-services__content">
+                <div class="section-services__content text_styles">
                     <div class="section-services__content-img">
                         <img src="{{ asset('img/img-computer-work.webp') }}" alt="{{ config('lend_data.company_name') }}">
                     </div>

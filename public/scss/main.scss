@@ -56,6 +56,10 @@ img {
     background-color: $light_blue_bg;
 }
 
+.border-radius-base {
+    border-radius: $border_rad;
+}
+
 .separator{
     position: relative;
     width: 100%;
@@ -72,6 +76,9 @@ img {
         left: 50%;
 
     }
+}
+.separator-rotate {
+    transform: rotate(180deg);
 }
 
 @media (max-width: 1440px) {
