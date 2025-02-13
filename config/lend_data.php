@@ -2,6 +2,10 @@
 
 return [
     'company_name' => "АО «КПТ»",
+    'company_phone' => "+7(4712) 771-033",
+    'company_email'=> "info@kpt.ru",
+    'company_address'=> "305527, Курская область, Курский район, д. Ворошнево, ул.Сосновая, д. 1/1",
+    'company_geo'=> '51.651562, 36.045294',
     'sections' => [
         'Кадровое сопровождение' => [
             'img' => 'img/section_img/kadri.webp',

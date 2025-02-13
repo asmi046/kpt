@@ -25,6 +25,10 @@ section{
     padding-bottom: $section_space;
 }
 
+h1,h2,h3{
+    line-height: 1.2;
+}
+
 .container{
     width: 100%;
     max-width: $conteiner_max_w;
@@ -77,6 +81,42 @@ img {
     transform: rotate(180deg);
 }
 
+.side_menue {
+
+    .top_blk{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        .logo img{
+            width: 65px;
+            height: 100px;
+        }
+    }
+
+    .menue_body{
+        .side_navigation{
+            text-align: center;
+        }
+        .nav{
+            margin-bottom: 40px;
+        }
+        .nav__list{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        a {
+            display: block;
+        }
+    }
+}
+
 @media (max-width: 1440px) {
     .container {
         width: 96%;
@@ -84,3 +124,5 @@ img {
         margin-right: auto;
     }
 }
+
+@import "menues";
