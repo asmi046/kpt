@@ -31,7 +31,7 @@
     },
     "devDependencies": {
         "autoprefixer": "^10.4.20",
-        "axios": "^1.7.4",
+        "axios": "^1.7.9",
         "concurrently": "^9.0.1",
         "laravel-vite-plugin": "^1.2.0",
         "postcss": "^8.4.47",
@@ -40,6 +40,7 @@
         "vite": "^6.0.11"
     },
     "dependencies": {
-        "@vitejs/plugin-vue": "^5.2.1"
+        "@vitejs/plugin-vue": "^5.2.1",
+        "vue-axios": "^3.5.2"
     }
 }

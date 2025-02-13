@@ -5,19 +5,32 @@
         font-weight: 500;
         color: $main_color;
         margin: 20px 0;
+
         @media (max-width: 992px) {
             text-align: center;
+        }
+
+        @media (max-width: 480px){
+            font-size: 1.2rem;
         }
     }
 
     p{
         margin: 20px 0;
+
+        @media (max-width: 480px){
+            font-size: 14px;
+        }
     }
 
     ul li {
         margin: 10px 0;
         position: relative;
         padding-left: 20px;
+
+        @media (max-width: 480px){
+            font-size: 14px;
+        }
     }
 
     ol{
@@ -28,6 +41,10 @@
         li {
             margin: 10px 0;
             position: relative;
+
+        @media (max-width: 480px) {
+                font-size: 14px;
+            }
         }
 
         li::before{
@@ -51,7 +68,14 @@
         border-radius: 2px;
         background-color: $main_color;
     }
+
+    div{
+        @media (max-width: 480px){
+            font-size: 14px;
+        }
+    }
 }
+
 
 
 @media (max-width: 320px) {

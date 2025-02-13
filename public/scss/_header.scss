@@ -15,6 +15,10 @@ header{
 
         .top {
                 @include flex-display;
+
+                @media (max-width:480px) {
+                    justify-content: center;
+                }
             }
 
             .logo {
@@ -22,6 +26,11 @@ header{
                     max-width: 90px;
                     min-width: 50px;
                 }
+            @media (max-width:1024px) {
+                img {
+                        max-width: 65px;
+                }
+            }
             }
 
             .nav {
@@ -29,7 +38,8 @@ header{
                 padding: 40px 0;
                 &__list {
                     @include flex-display;
-                    justify-content: space-evenly;
+                    justify-content: flex-end;
+                    gap: 80px;
                 }
 
                 &__link{
@@ -39,8 +49,25 @@ header{
                         color: $hover_color;
                     }
                 }
-            }
 
+                 @media (max-width:1024px) {
+                    padding: 20px 0;
+                 }
+
+                 @media (max-width:480px) {
+                    display: none;
+                 }
+            }
+        @media (max-width:1366px) {
+            width: 42%;
+        }
+
+        @media (max-width:1024px) {
+            width: 100%;
+            .top{
+                align-items: center;
+            }
+        }
     }
 
     .right_side {
@@ -68,6 +95,14 @@ header{
             width: 100%;
             height: 100%;
         }
+
+        @media (max-width:1366px) {
+            width: 48%;
+        }
+
+        @media (max-width:1024px) {
+            display: none;
+        }
     }
 }
 
@@ -82,25 +117,39 @@ header{
         font-size: 2.5rem;
         font-weight: 500;
         margin: $main_title_mg 0;
+
+        @media (max-width:480px) {
+            font-size: 1.8rem;
+        }
     }
 
     &__description {
+        width: 75%;
         font-size: 1.25rem;
+
+        @media (max-width:1366px) {
+            width: 100%;
+        }
+
+        @media (max-width:480px) {
+            font-size: 1rem;
+        }
     }
 
     &__buttons {
         a:last-child {
             margin-left: 20px;
+            }
         }
-    }
 
-    @media (max-width: 992px){
+    @media (max-width: 1024px){
         padding: 40px 0;
         gap: 20px;
+    }
 
-        &__buttons {
-            text-align: center;
-        }
+    @media (max-width:480px) {
+        text-align: center;
+        padding: 20px 0;
     }
 }
 
@@ -111,6 +160,10 @@ header{
         font-size: 2rem;
         font-weight: 500;
         margin: $main_title_mg 0;
+
+        @media (max-width: 480px){
+            font-size: 1.5rem;
+        }
     }
 
     @media (max-width: 992px){
@@ -178,18 +231,49 @@ header{
 }
 
 .section-contacts{
-
-    &__wrapper{
+    padding-bottom: 60px;
+    &__content{
         display: flex;
+        &-text{
+            flex: 1;
+        }
+
+        &-map{
+            flex: 1;
+
+            .map_contacts{
+                height: 100%;
+                box-shadow: $box_shadow;
+                border-radius: $border_rad;
+                overflow: hidden;
+
+        @media (max-width: 992px) {
+            width: 100%;
+            height: 350px;
+        }
+            }
+        }
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+            gap: 20px;
+        }
     }
+
 }
 
 
 .footer{
-    background-color: #103b33;
+    background-color: $footer_bg;
     &-content{
         @include flex-display;
         padding: 20px 0;
+
+        @media (max-width: 480px){
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
     }
     .logo {
         img {
@@ -211,6 +295,13 @@ header{
             &:hover {
                 color: $hover_color;
             }
+
+            @media (max-width: 480px){
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 480px){
+            margin-left: 0;
         }
     }
 }
