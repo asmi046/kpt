@@ -40,6 +40,10 @@ header{
                     @include flex-display;
                     justify-content: flex-end;
                     gap: 80px;
+
+                    @media (max-width:1240px) {
+                        gap: 40px;
+                    }
                 }
 
                 &__link{

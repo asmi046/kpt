@@ -48,7 +48,7 @@
     <main class="main">
         <section class="section-about" id="services-about">
             <div class="container">
-                <h2 class="section-about__title">ООО КПТ - помогаем наладить <br>бизнес-процессы</h2>
+                <h2 class="section-about__title">АО "КПТ" - помогаем наладить <br>бизнес-процессы</h2>
                 <p class="section-about__text">Компания КПТ оказывает комплексные услуги для бизнеса. Мы помогаем Вашему
                     бизнесу развиваться и налаживать бизнес процессы</p>
             </div>
